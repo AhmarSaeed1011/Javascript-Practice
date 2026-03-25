@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Even & Odd Checker</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Animated background particles -->
+    <div class="bg-particles">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <!-- Main Card -->
+    <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+            <div class="icon-wrapper">
+                <span class="header-icon">🔢</span>
+            </div>
+            <h1 class="title">Even & Odd Checker</h1>
+            <p class="subtitle">Enter a number to find out if it's even or odd</p>
+        </div>
+
+        <!-- Input Section -->
+        <div class="input-group">
+            <div class="input-wrapper">
+                <input
+                    type="text"
+                    id="numberInput"
+                    class="number-input"
+                    placeholder="Enter a number..."
+                    autocomplete="off"
+                >
+                <div class="input-glow"></div>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-group">
+            <button id="checkBtn" class="btn btn-check">
+                <span class="btn-text">Check Number</span>
+                <span class="btn-icon">🔍</span>
+            </button>
+            <button id="clearBtn" class="btn btn-clear">
+                <span class="btn-text">Clear</span>
+                <span class="btn-icon">🗑️</span>
+            </button>
+        </div>
+
+        <!-- Result Display -->
+        <div id="resultContainer" class="result-container hidden">
+            <div id="resultCard" class="result-card">
+                <span id="resultIcon" class="result-icon"></span>
+                <span id="resultText" class="result-text"></span>
+                <span id="resultNumber" class="result-number"></span>
+            </div>
+        </div>
+
+        <!-- Error Display -->
+        <div id="errorContainer" class="error-container hidden">
+            <span class="error-icon">⚠️</span>
+            <span id="errorText" class="error-text"></span>
+        </div>
+
+        <!-- Footer -->
+        <div class="card-footer">
+            <p>Tip: Press <kbd>Enter</kbd> to check quickly</p>
+        </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
